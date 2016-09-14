@@ -9,7 +9,7 @@
             console.log(data);
             $.each(data, function (key, item) {
                 console.log(item);
-                $('<div>', { class: "col-sm-3 event-box" })
+                $('<div>', { class: "col-sm-3 event-box"})
                 .appendTo($("#EventContainer"));
             })
         })
@@ -24,11 +24,18 @@
             console.log(data);
             $.each(data, function (key, item) {
                 console.log(item);
-                $('<div>', { class: "col-sm-3 event-box" })
-                .appendTo($("#EventContainer"));
+                var i = key;
+                while (i < 4) {
+                    i++;
+                    $('<div>', { class: "col-sm-3" })
+                    .append($('<div>', { class: "col-sm-3 category-box", text: CategoryText(item) }))
+                    .appendTo($("#CategoryContainer"));
+                }
+                console.log(item)
             })
         })
     };
+
 
     $("#BtnCreateEvent").on("click", function () {
         var data = $("#CreateEventForm").serialize();
@@ -54,6 +61,10 @@
         });
     })
 
+    GetCategories();
 
+    function CategoryText(item) {
+        return item.Name + " " + item.Id;
+    }
 
 });
