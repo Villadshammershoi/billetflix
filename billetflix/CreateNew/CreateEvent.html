@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/PageScript/Scripts.js"></script>
+    <link href="../Content/Css/Bootstrap Themes/buttons.css" rel="stylesheet" />
+    <link href="../Content/Css/Styles.css" rel="stylesheet" />
+    <link href="../Content/Css/Bootstrap/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <form id="CreateEventForm">
+        <h1>Opret nyt event</h1>
+        <div class="form-group">
+            <label for="Name">Navn på event:</label>
+            <input class="form-control" name="Name" />
+        </div>
+        <div class="form-group">
+            <label for="EventStart">Eventets start tidspunkt:</label>
+            <input class="form-control" name="EventStart" />
+        </div>
+        <div class="form-group">
+            <label for="EventEnd">Eventets slut tidspunkt:</label>
+            <input class="form-control" name="EventEnd" />
+        </div>
+        <div class="form-group">
+            <label for="Price">Pris per billet:</label>
+            <input class="form-control" name="Price" />
+        </div>
+        <div class="form-group">
+            <label for="NoOfTickets">Antal billetter til eventet:</label>
+            <input class="form-control" name="NoOfTickets" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Beskrivelse af eventet:</label>
+            <textarea class="form-control" name="Description"></textarea>
+        </div>
+        <input class="form-group" type="hidden" name="CategoryId" />
+        <input class="form-group" type="hidden" name="LocationId" />
+
+        <button type="button" id="BtnCreateEvent">Opret nyt event</button>
+    </form>
+
+</body>
+</html>

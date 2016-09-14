@@ -1,0 +1,43 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search-container {
+    margin-top: 25px;
+    background-image: url('../Images/music-background.jpg');
+    min-height: 650px;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+    .search-container h1 {
+        color: #fff;
+        margin: 100px 0 80px 0;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+.btn-search {
+    font-size: 30px;
+}
+
+.category-container {
+    margin-top: 100px;
+}
+        .category-btn {
+            color: #fff;
+            display: block;
+            text-align: center;
+            margin: 10px;
+            transition: .3s ease;
+            border: 1px solid #fff;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+            .category-btn:hover {
+                color: #f7d934;
+                border-color: #f7d934;
+                border-radius: 24px;
+            }
