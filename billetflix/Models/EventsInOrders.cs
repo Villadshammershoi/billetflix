@@ -6,19 +6,18 @@ namespace billetflix.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Media
+    public partial class EventsInOrders
     {
         public int Id { get; set; }
 
-        [Required]
-        public string Url { get; set; }
-
-        public int FK_Type { get; set; }
-
         public int FK_Event { get; set; }
+
+        public int FK_Order { get; set; }
+
+        public int Quantity { get; set; }
 
         public virtual Events Events { get; set; }
 
-        public virtual MediaTypes MediaTypes { get; set; }
+        public virtual Orders Orders { get; set; }
     }
 }

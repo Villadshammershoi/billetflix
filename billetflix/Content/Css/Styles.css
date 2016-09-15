@@ -45,3 +45,20 @@
 .category-box {
     border: 1px solid #c3c3c3;
 }
+
+.event-container {
+    background-color: #f7d934;
+    min-height: 200px;
+}
+
+    .event-container h4 {
+        
+    }
+
+    .event-container p {
+
+    }
+
+    .event-container a {
+
+    }
