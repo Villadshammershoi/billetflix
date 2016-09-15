@@ -8,7 +8,6 @@ namespace billetflix.Models
 
     public partial class Customers
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Customers()
         {
             Orders = new HashSet<Orders>();
@@ -34,7 +33,6 @@ namespace billetflix.Models
         [StringLength(50)]
         public string City { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Orders> Orders { get; set; }
     }
 }
