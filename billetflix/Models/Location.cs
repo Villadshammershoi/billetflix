@@ -9,7 +9,6 @@ namespace billetflix.Models
     [Table("Location")]
     public partial class Location
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Location()
         {
             Events = new HashSet<Events>();
@@ -27,7 +26,6 @@ namespace billetflix.Models
         [StringLength(50)]
         public string City { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Events> Events { get; set; }
     }
 }
